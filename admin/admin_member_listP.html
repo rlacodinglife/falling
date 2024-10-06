@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg"
+    data-sidebar-image="none" data-preloader="disable" data-theme="default" data-theme-colors="default">
+
+<head>
+    <meta charset="utf-8" />
+    <title>관리자 대시보드</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- jsvectormap css -->
+    <link href="css/boot/css/jsvectormap.min.css" rel="stylesheet" type="text/css" />
+
+    <!--Swiper slider css-->
+    <link href="css/boot/css/swiper-bundle.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Layout config Js -->
+    <script src="css/boot/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    <link href="css/boot/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="css/boot/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="css/boot/css/app.min.css" rel="stylesheet" type="text/css" />
+    <!-- custom Css-->
+    <link href="css/boot/css/custom.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/boot/css/admin.css">
+    <link rel="stylesheet" href="./css/admin_member_list.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js'></script>
+    <script src="./js/m_nav.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/Error.js"></script>
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+        <header>
+            <!-- 관리자 상단 네비 -->
+            <nav class="top_nav">
+                <h2 class="logo">낙상위험환경 설문조사</h2>
+                <ul class="top_ul">
+                    <li>
+                        <a href="./admin_member_add.html">회원관리</a>
+                    </li>
+                    <li>
+                        <a href="./index.html">설문관리</a>
+                    </li>
+                    <li>
+                        <a href="./index.html">회차설정</a>
+                    </li>
+                    <li>
+                        <a href="./index.html">설문리셋</a>
+                    </li>
+                    <li>
+                        <a href="./admin_changepass.html">비밀번호변경</a>
+                    </li>
+                </ul>
+                <ul class="top_ul login_btn">
+                    <li>
+                        <button class="login_btn_"><a href="./admin_login.html">로그인</a>
+                    </li>
+
+
+                </ul>
+                <div class="bar">
+                    <img src="./icon/menu_bar.svg" alt="">
+                </div>
+                <!-- 모바일 메뉴 -->
+                <div class="m_menu">
+                    <div class="bar">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                    <div class="m_menuw">
+                        <div class="mmenu">
+                            <ul data-aos="fade_out">
+                                <li class="menul menul1">
+                                    <a href="./admin_member_add.html">
+                                        <p><span class="men_num">1.</span>회원관리</p>
+
+                                    </a>
+                                </li>
+                                <li class="menul menul2">
+                                    <a href="./index.html">
+                                        <p>
+                                            <span class="men_num">2.</span>설문관리
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="menul menul3">
+                                    <a href="./answer.html">
+                                        <p><span class="men_num">3.</span>회차설정</p>
+                                    </a>
+                                </li>
+                                <li class="menul menul4">
+                                    <a href="./answer.html">
+                                        <p><span class="men_num">4.</span>설문리셋</p>
+                                    </a>
+                                </li>
+                                <li class="menul menul5">
+                                    <a href="./answer.html">
+                                        <p><span class="men_num">5.</span>비밀번호변경</p>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="mmenu_btm">
+                            <ul>
+                                <li><a href="./login.html">로그인</a> <span> / </span> <a href="./register.html">회원가입</a>
+                                </li>
+                                <!-- <li><a href="./login.html">KOR</a> <span> | </span> <a href="./en/login.html">ENG</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- 관리자 상단 네비 -->
+        </header>
+        <!-- ========== App Menu ========== -->
+
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0">기업관리</h4>
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">회원관리</a></li>
+                                        <li class="breadcrumb-item active">기업관리</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-header align-items-center d-flex">
+                                    <h4 class="card-title mb-0 flex-grow-1">기업 검색</h4>
+                                </div><!-- end card header -->
+                                <div class="card-body">
+                                    <div class="live-preview">
+                                        <form action="javascript:void(0);" class="form_search">
+                                            <div class="row gx-3 gy-2 mb-3 align-items-center mb-3">
+                                                <h4 class="form_title">기업검색</h4>
+                                                <div class="select_input_box col-auto">
+                                                    <div class="col-auto">
+                                                        <label class="visually-hidden"
+                                                            for="select_search_type2">검색</label>
+                                                        <select class="form-select" id="select_search_type2">
+                                                            <option selected>기업명</option>
+                                                            <option value="1">이용자ID</option>
+                                                            <option value="2">실행일</option>
+                                                            <option value="3">Compare ID</option>
+                                                            <option value="4">IMG_ID1</option>
+                                                            <option value="5">IMG_ID2</option>
+                                                            <option value="6">RESPONSE</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <!-- <div class="row gy-2 gx-3 mb-3 align-items-center">
+                        <h4 class="form_title">기간</h4>
+                        <div class="date_input_box col-auto">
+                          <div class="date_selectbox col-auto">
+                            <label class="visually-hidden" for="select_search_type">검색</label>
+                            <select class="form-select" id="select_search_type">
+                              <option selected>가입일</option>
+                              <option value="1">구독만기일</option>
+                              <option value="2">구독등록일</option>
+                              <option value="3">접속일</option>
+                              <option value="4">생일</option>
+                            </select>
+                          </div>
+                          <div class="date_select">
+                            <input type="date" class="form-control form-date" id="date_start" value="">
+                            <span>~</span>
+                            <input type="date" class="form-control form-date" id="date_end">
+                          </div>
+                          <div class="date_btns">
+                            <button type="button" class="btn btn-outline-primary waves-effect waves-light active"
+                              onclick="clickDate('today', this)">오늘</button>
+                            <button type="button" class="btn btn-outline-primary waves-effect waves-light"
+                              onclick="clickDate('day7', this)">7일</button>
+                            <button type="button" class="btn btn-outline-primary waves-effect waves-light"
+                              onclick="clickDate('month1', this)">30일</button>
+                            <button type="button" class="btn btn-outline-primary waves-effect waves-light"
+                              onclick="clickDate('month3', this)">3개월</button>
+                            <button type="button" class="btn btn-outline-primary waves-effect waves-light"
+                              onclick="clickDate('month6', this)">6개월</button>
+                          </div>
+                        </div>
+                      </div> -->
+                                            <!-- <div class="row gx-3 gy-2 align-items-center mb-3">
+                        <h4 class="form_title">회원구분</h4>
+                        <div class="d-flex align-items-center gap-2 w-auto">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radio_mem_type" id="type1" checked>
+                            <label class="form-check-label" for="type1">
+                              기업회원
+                            </label>
+                          </div> -->
+                                            <!-- <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radio_mem_type" id="type2">
+                            <label class="form-check-label" for="type2">
+                              올인원회원
+                            </label>
+                          </div> -->
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="search_btns">
+                                    <!-- <button type="button" class="btn btn-light w-sm waves-effect">초기화</button> -->
+                                    <button type="submit"
+                                        class="btn btn-primary w-sm waves-effect waves-light">검색</button>
+                                </div>
+                                <!--end row-->
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end col -->
+            </div>
+
+            <div class="row">
+                <div class="list_info">
+                    <span class="fs-6 flex-shrink-0">총 <b>10</b>건</span>
+                    <div class="list_sort_btns">
+                        <select class="form-select" id="select_view_cnt">
+                            <option value="10" selected>10개씩 보기</option>
+                            <option value="20">20개씩 보기</option>
+                            <option value="30">30개씩 보기</option>
+                        </select>
+                        <div class="btns">
+                            <button type="button"
+                                class="btn btn-outline-primary w-md waves-danger waves-light">회원관리</button>
+                            <button type="button" class="btn btn-success w-md waves-danger waves-light">엑셀다운로드</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-xl-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="live-preview">
+                                <div class="table-responsive table-card">
+                                    <table class="table align-middle table-striped table-nowrap mb-0 table_list">
+                                        <colgroup>
+                                            <col style="width: 46px;">
+                                            <col style="width: 100px;">
+                                            <col style="width: 100px;">
+                                            <col style="width: 100px;">
+                                            <col style="width: 100px;">
+                                            <col style="width: 100px;">
+                                            <col style="width: 100px;">
+                                            <col style="width: 100px;">
+                                            <col style="width: 120px;">
+                                            <col style="width: 120px;">
+                                            <col style="width: 120px;">
+                                        </colgroup>
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th scope="col">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="cardtableCheck">
+                                                        <label class="form-check-label" for="cardtableCheck"></label>
+                                                    </div>
+                                                </th>
+                                                <th scope="col">이용자ID</th>
+                                                <th scope="col">실행일</th>
+                                                <th scope="col">Compare ID</th>
+                                                <th scope="col">IMG_ID1</th>
+                                                <th scope="col">IMG_ID2</th>
+                                                <th scope="col">RESPONSE</th>
+                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="cardtableCheck01">
+                                                        <label class="form-check-label" for="cardtableCheck01"></label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="./company_dtl.php">1234567</a>
+                                                </td>
+                                                <td>스토리숲</td>
+                                                <td>기업회원</td>
+                                                <td>홍길동</td>
+                                                <td>홍길동</td>
+                                                <td>abc1234</td>
+                                               
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="cardtableCheck01">
+                                                        <label class="form-check-label" for="cardtableCheck01"></label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="./company_dtl.php">1234567</a>
+                                                </td>
+                                                <td>스토리숲</td>
+                                                <td>올인원회원</td>
+                                                <td>홍길동</td>
+                                                <td>홍길동</td>
+                                                <td>abc1234</td>
+                                              
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="cardtableCheck01">
+                                                        <label class="form-check-label" for="cardtableCheck01"></label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="./company_dtl.php">1234567</a>
+                                                </td>
+                                                <td>스토리숲</td>
+                                                <td>올인원회원</td>
+                                                <td>홍길동</td>
+                                                <td>홍길동</td>
+                                                <td>abc1234</td>
+                                               
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="cardtableCheck01">
+                                                        <label class="form-check-label" for="cardtableCheck01"></label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="./company_dtl.php">1234567</a>
+                                                </td>
+                                                <td>스토리숲</td>
+                                                <td>올인원회원</td>
+                                                <td>홍길동</td>
+                                                <td>홍길동</td>
+                                                <td>abc1234</td>
+                                               
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="cardtableCheck01">
+                                                        <label class="form-check-label" for="cardtableCheck01"></label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="./company_dtl.php">1234567</a>
+                                                </td>
+                                                <td>스토리숲</td>
+                                                <td>기업회원</td>
+                                                <td>홍길동</td>
+                                                <td>홍길동</td>
+                                                <td>abc1234</td>
+                                               
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="cardtableCheck01">
+                                                        <label class="form-check-label" for="cardtableCheck01"></label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="./company_dtl.php">1234567</a>
+                                                </td>
+                                                <td>스토리숲</td>
+                                                <td>기업회원</td>
+                                                <td>홍길동</td>
+                                                <td>홍길동</td>
+                                                <td>abc1234</td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="cardtableCheck01">
+                                                        <label class="form-check-label" for="cardtableCheck01"></label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="./company_dtl.php">1234567</a>
+                                                </td>
+                                                <td>스토리숲</td>
+                                                <td>기업회원</td>
+                                                <td>홍길동</td>
+                                                <td>홍길동</td>
+                                                <td>abc1234</td>
+                                               
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="cardtableCheck01">
+                                                        <label class="form-check-label" for="cardtableCheck01"></label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="./company_dtl.php">1234567</a>
+                                                </td>
+                                                <td>스토리숲</td>
+                                                <td>기업회원</td>
+                                                <td>홍길동</td>
+                                                <td>홍길동</td>
+                                                <td>abc1234</td>
+                                              
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="cardtableCheck01">
+                                                        <label class="form-check-label" for="cardtableCheck01"></label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="./company_dtl.php">1234567</a>
+                                                </td>
+                                                <td>스토리숲</td>
+                                                <td>기업회원</td>
+                                                <td>홍길동</td>
+                                                <td>홍길동</td>
+                                                <td>abc1234</td>
+                                             
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="d-flex justify-content-center mt-5">
+                                    <div class="pagination-wrap hstack gap-2">
+                                        <a class="page-item pagination-prev disabled" href="#">
+                                            Previous
+                                        </a>
+                                        <ul class="pagination listjs-pagination mb-0">
+                                            <li class="active"><a class="page" href="#" data-i="1" data-page="3">1</a>
+                                            </li>
+                                            <li><a class="page" href="#" data-i="2" data-page="3">2</a></li>
+                                        </ul>
+                                        <a class="page-item pagination-next" href="#">
+                                            Next
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- container-fluid -->
+    </div>
+    <!-- End Page-content -->
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <script>document.write(new Date().getFullYear())</script> © Velzon.
+                </div>
+                <div class="col-sm-6">
+                    <div class="text-sm-end d-none d-sm-block">
+                        Design & Develop by Themesbrand
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+
+
+
+    <!--start back-to-top-->
+    <button onclick="topFunction()" class="btn btn-danger btn-icon" id="back-to-top">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+    <!--end back-to-top-->
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <script src="assets/libs/feather-icons/feather.min.js"></script>
+    <script src="assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
+    <script src="assets/js/plugins.js"></script>
+
+    <!-- apexcharts -->
+    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+
+    <!-- Vector map-->
+    <script src="assets/libs/jsvectormap/js/jsvectormap.min.js"></script>
+    <script src="assets/libs/jsvectormap/maps/world-merc.js"></script>
+
+    <!--Swiper slider js-->
+    <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Dashboard init -->
+    <script src="assets/js/pages/dashboard-ecommerce.init.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

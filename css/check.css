@@ -1,0 +1,385 @@
+
+html,
+
+button.yellow{
+    background-color: rgb(255, 217, 0);
+}
+
+/* 헤더카멜폰트 */
+nav.top_nav>h2.logo {
+    font-weight: bold;
+    padding: 1vh 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'GmarketSansMedium';
+}
+
+/* 로고 카멜폰트 */
+/* 로고 카멜폰트 */
+header>nav.top_nav>h2.logo>span.camel_bigfont {
+    font-size: 1em;
+    text-indent: 5px;
+}
+
+header>nav.top_nav>h2.logo>span.camel_smfont {
+    font-size: 0.875em !important;
+   
+}
+
+/* 로고 카멜폰트 */
+
+main#wrap{
+    min-height: auto;
+}
+section#main{
+    min-height: auto;
+}
+
+div.check_wrap{
+    /* width: 100%; */
+    text-align: center;
+    margin: 0 auto;
+  
+}
+
+div.check_wrap>fieldset>legend{
+    font-size: 1.5em;
+    margin-bottom: 3vh;
+}
+
+div.check_wrap>fieldset>div{
+    text-align: left;
+    padding: 0 10vw;
+    box-sizing: border-box;
+    line-height: 1.5em;
+}
+
+div.input_text{
+    margin-left: 1.5em;
+    box-sizing: border-box;
+}
+
+div.input_text>input{
+    width: 60%;
+    height: 2.5vh;
+}
+
+div.btm_btn>button{
+    background-color: rgb(255, 217, 0);
+    color: black;
+}
+
+input#submit{
+    margin-top: .5em;
+}
+input[type="checkbox"]{
+    background-color: black !important;
+    
+}
+
+/* 푸터 */
+footer {
+    width: 100%;
+
+    min-height: 10vh;
+    background-color: black;
+    position: relative;
+    bottom: 0px;
+    color: white;
+
+}
+footer>div>p>span>a{
+    color: white;
+}
+footer>div {
+    width: 60%;
+    margin: 0px auto;
+    line-height: 1.5em;
+    padding: 2vh 0;
+    font-size: .875em;
+}
+
+footer>div>p.logo {
+    color: #FFF;
+    font-weight: 900 !important;
+    font-family: "GmarketSansMedium";
+    font-size: 1.25em;
+
+
+}
+
+footer>div>p {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    font-size: .875em;
+    font-weight: 400;
+    margin-bottom: 1vh;
+}
+
+footer>div:last-child>p {
+    padding: 2vh 0 3vh 0;
+    box-sizing: border-box;
+}
+/* 까지 푸터 */
+
+/* 모바일 980 */
+/* click */
+.m_menu .click {
+    opacity: 1;
+    width: 100%;
+}
+.m_menu .click .mmenu{
+    opacity: 1;
+    padding-top: 0px;
+}
+.bar .bar1.click{
+    transform: rotate( 45deg ) translate(10px, 7px);
+}
+.bar .bar2.click{
+    opacity: 0;
+}
+.bar .bar3.click{
+    transform: rotate( -45deg ) translate(8px, -6px);
+}
+
+/* click */
+
+ .bar {
+    width: 30px;
+    height: 30px;
+    position: relative;
+
+}
+
+ .bar {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+}
+    
+ .bar div{
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    margin-top: 8px;
+    transition-duration: 1s;
+    opacity: 1;
+}
+    
+ .bar .bar1{
+    margin-top: 0px;
+}
+
+ .bar .bar1.click{
+    transform: rotate( 45deg ) translate(10px, 7px);
+}
+ .bar .bar2.click{
+    opacity: 0;
+}
+ .bar .bar3.click{
+    transform: rotate( -45deg ) translate(8px, -6px);
+}
+
+.m_menu {
+    position: fixed;
+    right: 0px;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 9980;
+    transition-duration: .5s;
+    overflow: hidden;
+    opacity: 0;
+}
+.m_menu .m_menuw {
+    float: right;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100%;
+
+}
+
+.m_menu.click {
+    opacity: 1;
+    width: 100%;
+    
+}
+
+.m_menu .m_menuw p{
+    font-size: 25px;
+    color: #fff;
+    margin-top: 20px;
+    font-weight: 500;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 10px;
+    cursor: pointer;
+}
+.m_menu .m_menuw ul li:nth-child(n+2) p{
+    margin-top:30px;
+} 
+
+
+.m_menu .m_menuw .mmenu{
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transition-delay: .5s;
+    transition-duration: .6s;;
+    margin-top: -60px;
+    padding-top: 60px;
+    opacity: 0;
+    padding-left: 40px;
+}
+.m_menu.click .mmenu{
+    opacity: 1;
+    padding-top: 0px;
+}
+
+
+
+.m_menu .m_menuw ul li .depth_men{
+    overflow: hidden;
+    padding-left: 12px;
+}
+
+.m_menu .m_menuw ul li .depth_men ul li{
+    float: left;
+    padding: 15px 20px;
+}
+
+.m_menu .m_menuw ul li .men_num{
+    font-size: 35px;
+    color: #fff;
+}
+
+.m_menu .m_menuw a {
+    font-size: 18px;
+    color: #fff;
+    display: inline-block;
+    color: #dcdcdc;
+}
+
+
+@media screen and (max-width:468px) {
+    .m_menu .m_menuw a {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:768px) {
+  
+    .m_menu .m_menuw a p,.m_menu .m_menuw a p{
+        font-size: 14px !important;
+    }
+}
+
+
+@media screen and (max-width:980px) {
+    div.input_text>input{
+        height: 1.5vh;
+    }
+    div.btm_text{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.btm_btn>button{
+        width: 100% !important;
+    }
+     /* 모바일? */
+     ul.top_ul{
+        display: none;
+     }
+     .m_menu{
+        opacity: 1;
+    }
+    div.bar{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 10px;
+        top: 0px;
+        cursor: pointer;
+        z-index: 5;
+        display: block;
+    }
+   .bar .bar1 {
+        margin-top: 0px;
+    }
+    .bar div {
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        margin-top: 8px;
+        transition-duration: 1s;
+        opacity: 1;
+    }
+    .m_menu .m_menuw p{
+        font-size: 20px;
+    }
+    .m_menu .m_menuw ul li:nth-child(n+2) p{
+        margin-top:20px;
+    } 
+    
+    
+    
+    .m_menu .m_menuw ul li .depth_men{
+        overflow: hidden;
+        padding-left: 12px;
+    }
+    
+    .m_menu .m_menuw ul li .depth_men ul li{
+        float: left;
+        padding: 10px 20px;
+    }
+    
+    .m_menu .m_menuw ul li .men_num{
+        font-size: 25px;
+    }
+    
+    .m_menu .m_menuw a {
+        font-size: 16px;
+    }
+     /* 일시정지 */
+     div.btm_text {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        gap: 1vh;
+    }
+
+    div.btm_text {
+        width: 80%;
+    }
+
+    div.btm_btn>button {
+        width: 100%;
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width:1024px){
+    footer>div{
+        width: 90%;
+    }
+}
+@media screen and (max-width:1400px) {
+    span.slash{
+        display: none;
+    }
+
+    button.login_btn_>a{
+        display: flex;
+        flex-direction: column;
+        font-size: .75em;
+    }
+}

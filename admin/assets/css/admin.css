@@ -1,0 +1,349 @@
+@charset "UTF-8";
+:is(.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6) {
+  font-family: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "맑은 고딕", "dotum", "돋움", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+
+nav.gnb {
+  height: 70px;
+}
+
+nav.gnb ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+nav.gnb ul li {
+  padding: 0 16px;
+  display: inline-block;
+  height: 100%;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+nav.gnb ul li a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: var(--body_text);
+}
+
+nav.gnb ul li:hover a,
+nav.gnb ul li.active a {
+  color: var(--admin_brand_color);
+  font-weight: 600;
+}
+
+:is([data-layout=vertical], [data-layout=semibox])[data-sidebar-size=sm] .navbar-menu .navbar-nav .menu-title i {
+  display: none;
+}
+
+@media screen and (max-width:1500px) {
+  nav.gnb {
+    display: none;
+  }
+}
+
+.form-check label {
+  transform: translateY(2px);
+}
+
+span.asterisk {
+  color: var(--error);
+}
+
+/* 공통 : 리스트 상단 검색영역 */
+form.form_search h4.form_title {
+  width: auto;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  flex-basis: 100px;
+  flex-shrink: 0;
+  text-align: center;
+  margin-top: 8px;
+  line-height: 23px;
+  min-height: 23px;
+}
+
+.date_select {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: auto;
+}
+
+.date_select * {
+  width: auto;
+}
+
+.date_select .form-date {
+  max-width: 200px;
+}
+
+.date_btns {
+  display: flex;
+  align-items: center;
+  width: auto;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.list_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 8px;
+}
+
+.list_sort_btns {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+}
+
+.list_sort_btns select {
+  width: fit-content;
+}
+
+.list_sort_btns .btns {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+form.form_search>.row {
+  min-height: 37px;
+}
+
+form.form_search .select_input_box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 80%;
+}
+
+form.form_search .search_btns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.select_input_box .input_price {
+  max-width: 200px;
+}
+
+.date_input_box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* 모달 속의 테이블 컨텐츠 */
+.modal_table_content {
+  margin-top: 12px;
+}
+
+.modal_table_content:first-child {
+  margin-top: 0px;
+}
+
+.modal_table_content .title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.modal_table_content .title h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width:768px) {
+  form.form_search h4.form_title {
+    flex-basis: 100%;
+    text-align: left;
+  }
+
+  .list_info {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 8px;
+  }
+
+  .list_sort_btns {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .list_sort_btns select {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .list_sort_btns .btns {
+    width: 100%;
+  }
+
+  .list_sort_btns .btns * {
+    min-width: auto;
+    width: 100%;
+  }
+
+  .date_select {
+    width: 100%;
+  }
+
+  .date_select .form-date {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  #date_select .form-date {
+    width: auto;
+    max-width: 200px;
+  }
+
+  .date_btns {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .date_btns * {
+    flex: 1;
+    width: 100%;
+    min-width: 70px;
+  }
+
+  form.form_search .select_input_box {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  form.form_search .select_input_box * {
+    flex: 1;
+    width: 100%;
+  }
+
+  .select_input_box .input_price {
+    max-width: 100%;
+  }
+
+  form.form_search .search_btns {
+    width: 100%;
+  }
+
+  form.form_search .search_btns * {
+    flex: 1;
+    width: 100%;
+  }
+
+  .date_input_box .date_selectbox {
+    width: 100%;
+  }
+}
+
+.table-responsive::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+  height: 30%;
+  background: #dddddd;
+  border-radius: 10px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 20px;
+}
+
+.table_list {
+  table-layout: fixed;
+}
+
+.table_list th,
+.table_list td {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.table_list td.left {
+  text-align: left;
+}
+
+.table_list td.no_overflow {
+  overflow: visible;
+  text-overflow: initial;
+  white-space: wrap;
+}
+
+.table_list .form-check {
+  text-align: center;
+}
+
+.table-responsive-detail {
+  width: 100%;
+}
+
+.table-responsive-detail .table_detail {
+  min-width: 1000px;
+}
+
+.table-responsive-detail .table_detail.min-width700 {
+  min-width: 700px;
+}
+
+.table-responsive.table-responsive-y {
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+.table-responsive.table-responsive-y table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table-responsive.table-responsive-y table thead th {
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.table_detail {
+  table-layout: fixed;
+}
+
+.table_detail th {
+  text-align: center;
+}
+
+.table_detail th {
+  --vz-table-color-state: var(--vz-table-active-color);
+  --vz-table-bg-state: var(--vz-table-active-bg);
+}
+
+.table_detail td {
+  white-space: initial;
+}
+
+.table-card td:first-child,
+.table-card th:first-child {
+  padding-left: .75em;
+}
+
+.table-card td:last-child,
+.table-card th:last-child {
+  padding-right: .75em;
+}

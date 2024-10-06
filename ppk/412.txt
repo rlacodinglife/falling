@@ -1,0 +1,20 @@
+개발 서버 정보입니다
+
+FTP
+52.78.27.204
+User: ubuntu
+DB ID: root
+DB pw: bn@5188##
+
+
+
+개발 서버 정보입니다
+
+FTP
+52.78.27.204
+User: ubuntu
+DB ID: root
+DB pw: bn@5188##
+
+
+http://52.78.27.204/

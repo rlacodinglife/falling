@@ -1,0 +1,20 @@
+body,
+html {
+    width: 100%;
+}
+
+div#text_wrap {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+div#text_wrap>ul {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+li{
+    margin-bottom:5vh !important;
+}

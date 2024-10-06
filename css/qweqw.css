@@ -1,0 +1,523 @@
+
+html,
+a{
+    text-decoration: none;
+}
+header {
+   width: 100%;
+   margin: 0px auto;
+   background-color: #1E386F;
+
+   color: white;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+
+nav.top_nav {
+   position: relative;
+   width: 60%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   box-sizing: border-box;
+   /* padding: 1vh; */
+}
+
+.logo {
+   font-weight: bold;
+   padding: 1vh 0;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   color: white;
+   font-family: 'GmarketSansMedium';
+}
+
+/* 헤더카멜폰트 */
+nav.top_nav>h2.logo {
+   font-weight: bold;
+   padding: 1vh 0;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   font-family: 'GmarketSansMedium';
+}
+
+/* 로고 카멜폰트 */
+/* 로고 카멜폰트 */
+header>nav.top_nav>h2.logo>span.camel_bigfont {
+   font-size: 1em;
+   text-indent: 5px;
+}
+
+header>nav.top_nav>h2.logo>span.camel_smfont {
+   font-size: 0.875em !important;
+  
+}
+
+/* 로고 카멜폰트 */
+
+.top_ul {
+   padding: 1vh;
+   width: 35%;
+   display: flex;
+   align-items: center;
+   font-weight: 600;
+   font-size: 1em;
+   flex-direction: row;
+   box-sizing: border-box;
+   /* justify-content: space-between; */
+   gap: 10%;
+   text-align: center;
+}
+
+.top_ul li a {
+   font-size: 1em;
+   color: white;
+}
+
+ul.login_btn {
+   justify-content: end;
+}
+
+
+button.login_btn_ {
+   background-color: white;
+   color: rgb(55, 55, 90);
+   font-weight: 600;
+   padding: 0.5em;
+   box-sizing: border-box;
+   border: none;
+   border-radius: 5px;
+   line-height: 150%;
+   font-size: 1em;
+
+
+}
+
+button.login_btn_>a {
+   color: rgb(55, 55, 90);
+   font-weight: 600;
+}
+
+li.lang {
+   justify-content: space-between;
+   display: flex;
+   flex-direction: row;
+   color: rgba(255, 255, 255, 0.60);
+   width: 25%;
+   text-align: center;
+   font-family: "Pretendard-Regular";
+   font-size: 1.125em;
+   line-height: 144%;
+
+}
+
+li.lang>p:hover {
+   color: white;
+   font-weight: 500;
+}
+
+li.lang>p:nth-child(2) {
+   margin: 0px 10%;
+}
+
+/* 푸터 */
+footer {
+   width: 100%;
+
+   min-height: 10vh;
+   background-color: black;
+   position: relative;
+   bottom: 0px;
+   color: white;
+
+}
+
+footer>div {
+   width: 60%;
+   margin: 0px auto;
+   line-height: 1.5em;
+   padding: 2vh 0;
+   font-size: .875em;
+}
+
+footer>div>p.logo {
+   color: #FFF;
+   font-weight: 900 !important;
+   font-family: "GmarketSansMedium";
+   font-size: 1.25em;
+
+
+}
+
+footer>div>p {
+   display: flex;
+   align-items: flex-start;
+   gap: 24px;
+   font-size: .875em;
+   font-weight: 400;
+   margin-bottom: 1vh;
+}
+
+footer>div:last-child>p {
+   padding: 2vh 0 3vh 0;
+   box-sizing: border-box;
+}
+/* 까지 푸터 */
+
+
+button {
+   cursor: pointer;
+}
+
+/* 모바일 980 */
+/* click */
+.m_menu .click {
+   opacity: 1;
+   width: 100%;
+}
+.m_menu .click .mmenu{
+   opacity: 1;
+   padding-top: 0px;
+}
+.bar .bar1.click{
+   transform: rotate( 45deg ) translate(10px, 7px);
+}
+.bar .bar2.click{
+   opacity: 0;
+}
+.bar .bar3.click{
+   transform: rotate( -45deg ) translate(8px, -6px);
+}
+
+/* click */
+
+.bar {
+   width: 30px;
+   height: 30px;
+   position: relative;
+}
+
+.bar {
+   width: 30px;
+   height: 30px;
+   position: absolute;
+   top: 15px;
+   right: 10px;
+   cursor: pointer;
+   display: none;
+}
+   
+.bar div{
+   width: 100%;
+   height: 3px;
+   background-color: #fff;
+   margin-top: 8px;
+   transition-duration: 1s;
+   opacity: 1;
+}
+   
+.bar .bar1{
+   margin-top: 0px;
+}
+
+.bar .bar1.click{
+   transform: rotate( 45deg ) translate(10px, 7px);
+}
+.bar .bar2.click{
+   opacity: 0;
+}
+.bar .bar3.click{
+   transform: rotate( -45deg ) translate(8px, -6px);
+}
+
+.m_menu {
+   position: fixed;
+   right: 0px;
+   width: 0%;
+   height: 100%;
+   background-color: rgba(0,0,0,0.8);
+   z-index: 9980;
+   transition-duration: .5s;
+   overflow: hidden;
+   opacity: 0;
+}
+.m_menu .m_menuw{
+   float: right;
+   -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+   width: 100%;
+   height: 100%;
+   
+}
+
+.m_menu.click {
+   opacity: 1;
+   width: 100%;
+   
+}
+
+.m_menu .m_menuw p{
+   font-size: 25px;
+   color: #fff;
+   margin-top: 20px;
+   font-weight: 500;
+   background-repeat: no-repeat;
+   background-position: right center;
+   background-size: 10px;
+   cursor: pointer;
+}
+.m_menu .m_menuw ul li:nth-child(n+2) p{
+   margin-top:30px;
+} 
+
+
+.m_menu .m_menuw .mmenu{
+   top: 50%;
+   position: absolute;
+   transform: translateY(-50%);
+   -webkit-transform: translateY(-50%);
+   transition-delay: .5s;
+   transition-duration: .6s;;
+   margin-top: -60px;
+   padding-top: 60px;
+   opacity: 0;
+   padding-left: 40px;
+}
+.m_menu.click .mmenu{
+   opacity: 1;
+   padding-top: 0px;
+}
+
+
+
+.m_menu .m_menuw ul li .depth_men{
+   overflow: hidden;
+   padding-left: 12px;
+}
+
+.m_menu .m_menuw ul li .depth_men ul li{
+   float: left;
+   padding: 15px 20px;
+}
+
+.m_menu .m_menuw ul li .men_num{
+   font-size: 35px;
+   color: #fff;
+   display: none;
+      opacity: 0;
+}
+
+.m_menu .m_menuw a {
+   font-size: 18px;
+   color: #fff;
+   display: inline-block;
+   color: #dcdcdc;
+}
+/* 사이드바 하단 버튼란 */
+div.mmenu_btm {
+
+
+    position: absolute;
+    bottom: 10vh;
+    padding-top: 60px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    line-height: 2em;
+}
+
+div.mmenu_btm>ul>li>a:hover {
+    color: white !important;
+}
+
+
+
+
+/* 사이드바 하단 버튼란 */
+
+/* 공통부분 */
+
+/* 메인영역 */
+section#main {
+   width: 50%;
+   margin: 0px auto;
+   min-height: 55vh;
+   background-color: white;
+   border-radius: 10px;
+   padding: 5vh 5vw;
+   box-sizing: border-box;
+   text-align: center;
+}
+
+
+
+
+
+
+ /* 이곳은 팝업창 */
+ div.Pop_alert{
+    z-index: 9999;
+    width: 45%;
+    text-align: center;
+    background-color: #fff;
+    padding: 1vw;
+    box-sizing: border-box;
+    border: 1px dotted #000000;
+    position: absolute;
+    bottom:55%;
+    left: 50%;
+    margin-left: -25%;
+ 
+    /* display: none;
+    opacity: 0; */
+  }
+ 
+  div.Pop_alert .bold{
+    font-weight: 700;
+    font-size: 1.25em;
+    margin-bottom: 1vh;
+  }
+  div.Pop_alert .normal{
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 1vh;
+  }
+ 
+  button.btn_style{
+    margin-left: 1vw;
+    padding: .2vh 4vw;
+    box-sizing: border-box;
+    border: 1px solid #dadada;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #747474;
+  }
+ 
+  button.btn_style>a{
+    color: #747474;
+  }
+ 
+ 
+ 
+ 
+ 
+
+@media screen and (max-width:468px) {
+   .m_menu .m_menuw a {
+       font-size: 12px;
+   }
+}
+@media screen and (max-width:768px) {
+ 
+   .m_menu .m_menuw a p,.m_menu .m_menuw a p{
+       font-size: 14px !important;
+   }
+    /* 일시정지 */
+    div.btm_text {
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      gap: 1vh;
+  }
+
+  div.btm_text {
+      width: 80%;
+  }
+
+  div.btm_btn>button {
+      width: 100%;
+      font-size: 1.5em;
+  }
+}
+ 
+  @media screen and (max-width:980px) {
+ 
+    body,
+    html,
+    header,
+    section,
+    main,
+    footer {
+        font-size: 14px;
+    }
+ 
+    ul.top_ul {
+        display: none;
+    }
+    nav.top_nav{
+        width: 90%;
+    }
+    nav#prev_map>ul{
+        width: 90%;
+        margin: 0 auto;
+    }
+    section#main {
+        width: 80%;
+       padding: 3vh 2vw;
+    }
+   
+    /* 모바일? */
+    .m_menu{
+        opacity: 1;
+    }
+    
+    div.bar{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 10px;
+        top: 0px;
+        cursor: pointer;
+        z-index: 5;
+        display: block;
+    }
+   .bar .bar1 {
+        margin-top: 0px;
+    }
+    .bar div {
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        margin-top: 8px;
+        transition-duration: 1s;
+        opacity: 1;
+    }
+    .m_menu .m_menuw p{
+        font-size: 20px;
+    }
+    .m_menu .m_menuw ul li:nth-child(n+2) p{
+        margin-top:20px;
+    } 
+    
+    
+    
+    .m_menu .m_menuw ul li .depth_men{
+        overflow: hidden;
+        padding-left: 12px;
+    }
+    
+    .m_menu .m_menuw ul li .depth_men ul li{
+        float: left;
+        padding: 10px 20px;
+    }
+    
+    .m_menu .m_menuw ul li .men_num{
+        font-size: 25px;
+    }
+    
+    .m_menu .m_menuw a {
+        font-size: 16px;
+    }
+ }
+ @media screen and (max-width:1024px){
+   footer>div{
+       width: 90%;
+   }
+}

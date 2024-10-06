@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원관리</title>
+    <link rel="stylesheet" href="/css/admin_member_list.css">
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js'></script>
+    <script src="/js/m_nav.js"></script>
+    <script src="/js/login.js"></script>
+    <script src="/js/Error.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- 관리자 상단 네비 -->
+        <nav class="top_nav">
+            <h2 class="logo">낙상위험환경 설문조사</h2>
+            <ul class="top_ul">
+                <li>
+                    <a href="./admin_member_add.html">회원관리</a>
+                </li>
+                <li>
+                    <a href="./index.html">설문관리</a>
+                </li>
+                <li>
+                    <a href="./index.html">회차설정</a>
+                </li>
+                <li>
+                    <a href="./index.html">설문리셋</a>
+                </li>
+                <li>
+                    <a href="./admin_changepass.html">비밀번호변경</a>
+                </li>
+            </ul>
+            <ul class="top_ul login_btn">
+                <li>
+                    <button class="login_btn_"><a href="./admin_login.html">로그인</a>
+                </li>
+
+
+            </ul>
+            <div class="bar">
+                <img src="./icon/menu_bar.svg" alt="">
+            </div>
+            <!-- 모바일 메뉴 -->
+            <div class="m_menu">
+                <div class="bar">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="m_menuw">
+                    <div class="mmenu">
+                        <ul data-aos="fade_out">
+                            <li class="menul menul1">
+                                <a href="./admin_member_add.html">
+                                    <p><span class="men_num">1.</span>회원관리</p>
+
+                                </a>
+                            </li>
+                            <li class="menul menul2">
+                                <a href="./index.html">
+                                    <p>
+                                        <span class="men_num">2.</span>설문관리
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="menul menul3">
+                                <a href="./answer.html">
+                                    <p><span class="men_num">3.</span>회차설정</p>
+                                </a>
+                            </li>
+                            <li class="menul menul4">
+                                <a href="./answer.html">
+                                    <p><span class="men_num">4.</span>설문리셋</p>
+                                </a>
+                            </li>
+                            <li class="menul menul5">
+                                <a href="./answer.html">
+                                    <p><span class="men_num">5.</span>비밀번호변경</p>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="mmenu_btm">
+                        <ul>
+                            <li><a href="./login.html">로그인</a> <span> / </span> <a href="./register.html">회원가입</a></li>
+                            <!-- <li><a href="./login.html">KOR</a> <span> | </span> <a href="./en/login.html">ENG</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- 관리자 상단 네비 -->
+    </header>
+    <main id="main_wrap">
+        <section id="main">
+            <table class="top_table">
+                <caption class="table_title">회원관리</caption>
+                <thead>
+                    <tr>
+                        <th colspan="1" scope="colgroup">추가질의</th>
+                        <th colspan="3" scope="colgroup">진행상태</th>
+                        <th colspan="2" scope="colgroup">설문진행</th>
+                        <th colspan="2" scope="colgroup">이용자완료</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="1">-</td>
+                        <th scope="col">시작전</th>
+                        <th scope="col">일시정지</th>
+                        <th scope="col">완료</th>
+                        <th scope="col">참여중</th>
+                        <th scope="col">설문완료</th>
+                        <th scope="col">-</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>80/400 (20%)</td>
+                        <td scope="col">150 (37.5%)</td>
+                        <td>100 (25%)</td>
+                        <td>150 (37.5%)</td>
+                        <td>150/400 (45%)</td>
+                        <td>20000 (50%)</td>
+                        <td><span>350</span>/<span>400</span> (70%)</td>
+                    </tr>
+                    <tr>
+
+                </tbody>
+            </table>
+
+            <div class="member_listbtn_wrap">
+                <div class="listbtn_wrap">
+                    <a href=""><button>회원관리</button></a>
+                    <a href=""><button>엑셀 다운로드</button></a>
+                </div>
+            </div>
+            <div class="list_search">
+                <select id="mail_School">
+                    <option>선택</option>
+                    <option>고졸</option>
+                    <option>대졸</option>
+                    <option>대학원졸</option>
+                </select>
+            </div>
+            <table class="btm_table">
+                <caption>아래
+                </caption>
+                <thead>
+                    <tr>
+                        <th scope="col">이용자ID</th>
+                        <th scope="col">실행일</th>
+                        <th scope="col">Compare ID</th>
+                        <th scope="col">IMG_ID1</th>
+                        <th scope="col">IMG_ID2</th>
+                        <th scope="col">RESPONSE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>아이디</td>
+                        <td>24.05.21</td>
+                        <td>Cmpr_0001</td>
+                        <td>image_0035</td>
+                        <td>image_0087</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>아이디</td>
+                        <td>24.05.21</td>
+                        <td>Cmpr_0001</td>
+                        <td>image_0035</td>
+                        <td>image_0087</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>아이디</td>
+                        <td>24.05.21</td>
+                        <td>Cmpr_0001</td>
+                        <td>image_0035</td>
+                        <td>image_0087</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>아이디</td>
+                        <td>24.05.21</td>
+                        <td>Cmpr_0001</td>
+                        <td>image_0035</td>
+                        <td>image_0087</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>아이디</td>
+                        <td>24.05.21</td>
+                        <td>Cmpr_0001</td>
+                        <td>image_0035</td>
+                        <td>image_0087</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>아이디</td>
+                        <td>24.05.21</td>
+                        <td>Cmpr_0001</td>
+                        <td>image_0035</td>
+                        <td>image_0087</td>
+                        <td>1</td>
+                    </tr>
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td scope="row" colspan="6">
+                            << <span>1 <span>2 <span>3 <span>4 <span> >></th>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </section>
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-6">
+              <script>document.write(new Date().getFullYear())</script> 낙상위험환경
+            </div>
+            <div class="col-sm-6">
+              <div class="text-sm-end d-none d-sm-block">
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>   <style>
+        @font-face {
+            font-family: 'GmarketSansMedium';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</body>
+
+</html>

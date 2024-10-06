@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비밀번호 찾기</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.js'></script>
+    <script src="./js/m_nav.js"></script>
+    <!-- <script src="./js/login.js"></script> -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const nameInput = document.getElementById('name');
+
+            const nameError = document.getElementById('nameError')
+            // 제출 버튼 클릭 시 실행되는 함수입니다.
+            nameInput.addEventListener('blur', function () {
+                // 입력 필드의 값이 비어있는지 확인합니다.
+                if (nameInput.value.trim() === '') {
+                    // 입력값이 비어있는 경우 에러 메시지를 설정합니다.
+                    nameError.textContent = '아이디를 확인해주세요';
+                    // 입력 필드에 포커스를 주어 사용자에게 입력을 유도할 수 있습니다.
+
+
+                }
+                else {
+                    // 입력값이 있는 경우 에러 메시지를 지웁니다.
+                    IdError.textContent = '';
+                    // 제출 작업을 진행하거나 다음 작업을 수행합니다.
+
+                }
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="top_nav">
+            <h2 class="logo">낙상위험환경 설문조사</h2>
+            <ul class="top_ul">
+                <li>
+                    <a href="./subpage.html">설문소개/방법</a>
+                </li>
+                <li>
+                    <a href="./index.html">설문하기</a>
+                </li>
+                <li>
+                    <a href="./answer.html">문의하기</a>
+                </li>
+            </ul>
+            <ul class="top_ul login_btn">
+                <li>
+                    <button class="login_btn_"><a href="./login.html">로그인</a>
+                        <!-- <span class="slash">/</span><a
+                            href="./register.html">회원가입</a></button> -->
+                </li>
+                <li class="lang">
+                    <p><a href="./seacrhPass.html">KOR</a></p>
+                    <p>|</p>
+                    <p><a href="./en/seacrhPass.html">ENG</a></p>
+                </li>
+
+            </ul>
+            <div class="bar">
+                <!-- <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div> -->
+                <img src="./icon/menu_bar.svg" alt="">
+            </div>
+            <!-- 모바일 메뉴 -->
+            <div class="m_menu">
+                <div class="bar">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="m_menuw">
+                    <div class="mmenu">
+                        <ul data-aos="fade_out">
+                            <li class="menul menul1">
+                                <a href="./subpage.html">
+                                    <p><span class="men_num">1.</span>설문소개/방법</p>
+                                    <!-- <div class="depth_men">
+                                    <ul>
+                                        <li>
+                                            <a href=">name</a>
+                                        </li>
+                                    </ul>
+                                </div> -->
+                                </a>
+                            </li>
+                            <li class="menul menul2">
+                                <a href="./index.html">
+                                    <p>
+                                        <span class="men_num">2.</span>설문하기
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="menul menul3">
+                                <a href="./answer.html">
+                                    <p><span class="men_num">3.</span>문의하기</p>
+                                </a>
+                            </li>
+                          
+                        </ul>
+                    </div> <div class="mmenu_btm">
+                        <ul>
+                            <li><a href="./login.html">로그인</a> <span> / </span> <a href="./register.html">회원가입</a></li>
+                            <li><a href="./seacrhPass.html">KOR</a> <span> | </span> <a href="./en/seacrhPass.html">ENG</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="main_wrap">
+        <section id="main">
+            <div id="wrap" class="wrapper">
+                <form method="post" name="join" id="join">
+                    <!-- 회원가입 타이틀부분 -->
+                    <h1 class="h_loho">
+                        비밀번호 찾기
+                    </h1>
+
+                    <div id="container">
+                        <div class="row_group">
+                            <div class="userInput">
+                                <!-- 아이디 입력 -->
+                                <h3 class="list">이름</h3>
+                                <span class="box int_id"><input type="text" id="name" class="int check" placeholder=""
+                                        maxlength="20"></span>
+                                <!-- <span class="box int_id"> <input type="submit" value="중복확인" id="btnsame"
+                                        class="btn_type btn_primary btn_style"><span> -->
+                                <span id="nameError" class="ErrorMsg"></span>
+                            </div>
+                            <div class="userInput">
+                                <!-- 비밀번호 입력 -->
+                                <h3 class="list">생년월일<span id="pwError"></span></h3>
+                                <span class="box int_id"><input type="date" id="date" class="int check" placeholder=""
+                                        maxlength="2999-99-99"></span>
+                            </div>
+                            <!-- 비밀번호 재확인 입력 -->
+                            <div class="btn_area" id="OnPop">
+                                <a href="./subpage.html"><input type="button" value="확인" id="btnJoin"
+                                        class="btn_type btn_primary btn_style"></a>
+                            </div>
+                            <div class="search_area">
+                                <a href="./login.html">로그인</a><span>|</span><a href="./seacrhID.html">아이디
+                                    찾기</a><span>|</span><a href="./register.html">회원가입</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </form>
+
+
+                <div class="Pop_alert able">
+                    <p class="bold">비밀번호 찾기</p>
+                    <p class="normal">회원님의 임시 비밀번호는 <span class="Pop_span">asdasdasd</span> 입니다.<br> 로그인 후 꼭 변경해주세요</p>
+                    <div class="Pop_btn AB_btn">
+                        <button class="btn_style cancle grey"><a href="./login.html">취소</a></button>
+                        <button class="btn_style login blue"><a href="./seacrhPass.html">로그인</a></button>
+                    </div>
+                </div>
+
+                <div class="Pop_alert unable">
+                    <p class="bold">비밀번호 찾기</p>
+                    <p class="normal">회원정보가 존재하지 않습니다</p>
+                    <div class="Pop_btn">
+                        <button class="btn_style blue"><a href="./register.html">회원가입 하러가기</a></button>
+                        <button class="btn_style white"><a href="./seacrhPass.html">취소</a></button>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <div>
+            <p class="logo">낙상위험환경 설문조사</p>
+            <p>
+                <span><a href="">이용약관</a></span>
+                <span><a href="./Terms.html" target="_blank">개인정보처리방침</a></span>
+            </p>
+        </div>
+        <p style="width: 100%; height: 1px; background-color: #949494;"></p>
+        <div>
+            <p>Copyright 2024 HARP LAB All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설명</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/sub.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js'></script>
+    <script src="./js/m_nav.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="top_nav">
+            <h2 class="logo">낙상위험환경 설문조사</h2>
+            <ul class="top_ul">
+                <li>
+                    <a href="./subpage.php">설문소개/방법</a>
+                </li>
+                <li>
+                    <a href="./index.php">설문하기</a>
+                </li>
+                <li>
+                    <a href="./answer.php">문의하기</a>
+                </li>
+            </ul>
+            <ul class="top_ul login_btn">
+                <li>
+                    <button class="login_btn_"><a href="./login.php">로그인</a><span class="slash">/</span><a
+                            href="./register.php">회원가입</a></button>
+                </li>
+                <li class="lang">
+                    <p><a href="./subpage.php">KOR</a></p>
+                    <p>|</p>
+                    <p><a href="./en/subpage.php">ENG</a></p>
+                </li>
+
+            </ul>
+            <div class="bar">
+                <!-- <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div> -->
+                <img src="./icon/menu_bar.svg" alt="">
+            </div>
+            <!-- 모바일 메뉴 -->
+            <div class="m_menu">
+                <div class="bar">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="m_menuw">
+                    <div class="mmenu">
+                        <ul data-aos="fade_out">
+                            <li class="menul menul1">
+                                <a href="./subpage.php">
+                                    <p><span class="men_num">1.</span>설문소개/방법</p>
+                                    <!-- <div class="depth_men">
+                                    <ul>
+                                        <li>
+                                            <a href=">name</a>
+                                        </li>
+                                    </ul>
+                                </div> -->
+                                </a>
+                            </li>
+                            <li class="menul menul2">
+                                <a href="./index.php">
+                                    <p>
+                                        <span class="men_num">2.</span>설문하기
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="menul menul3">
+                                <a href="./answer.php">
+                                    <p><span class="men_num">3.</span>문의하기</p>
+                                </a>
+                            </li>
+                            <li class="menul menul4">
+                                <a href="./register.php">
+                                    <p><span class="men_num">4.</span>회원가입</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main_wrap">
+        <p class="main_title">낙상위험환경 설문조사</p>
+
+        <section class="main main_img">
+            <div class="main_top_text">
+                <h2>설문 소개</h2>
+                <p>본 설문은 외부환경에 대한 노인의 낙상위험 수준을 조사하기 위하여 제작되었습니다. 국내낙상으로 사망하는 노인은 한해에 83만여명에 이르며, 교통사고에 이어 노인 사고사망 원일 2위를
+                    차지하고 있습니다.</p>
+                <p>노인이 낙상으로 입원 시 급격한 근육손실이 일어나고 이러한 근육손실은 혈관, 내장기관, 면역세포 기능 등을 크게 약화시켜 사망으로 이어지게 됩니다. 낙상의 이유는 다양하지만,
+                    바닥표면 상태, 계단, 방해 및 장애물 등 환경적 요인이 주요 요인으로 작용하고 있습니다.</p>
+            </div>
+            <img class="main_top_img" src="./images/intro.png" alt="일러스트">
+        </section>
+        <section class="main">
+            <div class="main_bottom_text">
+                <h2>설문 방법</h2>
+                <p>로그인 후 진행되는 설문에서는 이러한 환경적 요일을 고려하여 두 장의 이미지 중 전반적으로 낙상위험도가 높아 보이는 이미지 한 장을 선택하게 됩니다. 이미지 선택은 총 500회
+                    진행되었을 때 완료[총 예상시간 20-30분 내외]되며, 설문진행 과정에서 중단 및 로그아웃이 가능하고 추후 같은 아이디로 로그인 하여 다시 진행할 수 있습니다. 설문 결과는
+                    소중한 연구자료로 활용되어 보자 안전한 도시환경을 만드는 정책자료로 활용됩니다.</p>
+
+                <p>*설문은 이미지 사이즈가 큰 관계로 데스크탑[DeskTop] 컴퓨터 또는 태블릿[Tablet]에서 진행해주시기 바랍니다.</p>
+            </div>
+        </section>
+        <section class="main">
+            <div class="main_bottom_text">
+                <h2>연구진 및 연구비 지원정보</h2>
+
+                <table style="width: 100%; margin-top: 2vh;">
+                    <colgroup>
+                        <col style="width: 15%;">
+                        <col style="width: 35%;">
+                        <col style="width: 50%;">
+                    </colgroup>
+                    <thead>
+                        <tr style="height: 5vh; font-size: 1.25em; padding: .25vw; box-sizing: border-box;">
+                            <td colspan="3">낙상위험 인식조사 실무진</td>
+                            <td colspan=""></td>
+                            <td colspan=""></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>홍의석</td>
+                            <td>유타대학교</td>
+                            <td>Healthy Aging and Resilient Places Lab</td>
+                        </tr>
+                        <tr>
+                            <td>최동아</td>
+                            <td>한양대학교</td>
+                            <td>도시대학원</td>
+                        </tr>
+                        <tr>
+                            <td>기동환</td>
+                            <td>오하이오주립대학교</td>
+                            <td>도시계획 박사과정</td>
+                        </tr>
+                        <tr>
+                            <td>하재현</td>
+                            <td>남가주대학교</td>
+                            <td>도시계획 및 개발 박사과정
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table style="width: 100%; margin-top: 2vh;">
+                    <colgroup>
+                        <col style="width: 20%;">
+                        <col style="width: 30%;">
+                        <col style="width: 50%;">
+                    </colgroup>
+                    <thead>
+                        <tr style="height: 5vh; font-size: 1.25em; padding: .25vw; box-sizing: border-box;">
+                            <td colspan="3">전체 연구진</td>
+                            <td colspan=""></td>
+                            <td colspan=""></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>장숙랑</td>
+                            <td>중앙대학교</td>
+                            <td>적십자간호대학</td>
+                        </tr>
+                        <tr>
+                            <td>최은희</td>
+                            <td>중앙대학교</td>
+                            <td>지역돌봄과 건강형평성 연구소</td>
+                        </tr>
+                        <tr>
+                            <td>김민경</td>
+                            <td>중앙대학교</td>
+                            <td>지역돌봄과 건강형평성 연구소</td>
+                        </tr>
+                        <tr>
+                            <td>김석규</td>
+                            <td>중앙대학교</td>
+                            <td>지역돌봄과 건강형평성 연구소</td>
+                        </tr>
+                        <tr>
+                            <td>최수현</td>
+                            <td>중앙대학교</td>
+                            <td>적십자간호대학</td>
+                        </tr>
+                        <tr>
+                            <td>최지희</td>
+                            <td>중앙대학교</td>
+                            <td>지역돌봄과 건강형평성 연구소</td>
+                        </tr>
+                        <tr>
+                            <td>한금희</td>
+                            <td>중앙대학교</td>
+                            <td>지역돌봄과 건강형평성 연구소</td>
+                        </tr>
+                        <tr>
+                            <td>박선영</td>
+                            <td>중앙대학교</td>
+                            <td>적십자간호대학</td>
+                        </tr>
+                        <tr>
+                            <td>박수찬</td>
+                            <td>서울대학교</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>최문정</td>
+                            <td>카이스트</td>
+                            <td>과학기술정책대학원</td>
+                        </tr>
+                        <tr>
+                            <td>김태경</td>
+                            <td>카이스트</td>
+                            <td>과학기술정책대학원</td>
+                        </tr>
+                        <tr>
+                            <td>김지해</td>
+                            <td>카이스트</td>
+                            <td>과학기술정책대학원</td>
+                        </tr>
+                        <tr>
+                            <td>박지원</td>
+                            <td>카이스트</td>
+                            <td>과학기술정책대학원</td>
+                        </tr>
+                        <tr>
+                            <td>정혜주</td>
+                            <td>고려대학교</td>
+                            <td>보건정책관리학부</td>
+                        </tr>
+                        <tr>
+                            <td>황종남</td>
+                            <td>원광대학교</td>
+                            <td>복지∙보건학부</td>
+                        </tr>
+                        <tr>
+                            <td>박주희</td>
+                            <td>원광대학교</td>
+                            <td>일반대학원 보건행정학과
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>김종우</td>
+                            <td>원광대학교</td>
+                            <td>일반대학원 보건행정학과
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>박재인</td>
+                            <td>아셈노인인권정책센터</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>최수현</td>
+                            <td>경북 공공보건의료지원단</td>
+                            <td></td>
+                        </tr>
+                   
+                    </tbody>
+                </table>
+                <p>*본 설문조사는 한국보건산업진흥원의 지원 연구과제인 "건강도시를 너머 돌봄도시로, 지속가능한 스마트 통합돌봄도시 : 전라북도 정읍시를 중심으로 [연구책임: 중앙대학교 장숙랑 교수]"
+                    의 지원을 받았습니다.</p>
+            </div>
+        </section>
+        <div class="btm_text">
+            <div class="btm_btn">
+                <a href="./index.php"><button>낙상위험환경 설문조사</button></a>
+
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div>
+            <p class="logo">낙상위험환경 설문조사</p>
+            <p>
+                <span>이용약관</span>
+                <span>개인정보처리방침</span>
+            </p>
+        </div>
+        <p style="width: 100%; height: 1px; background-color: #949494;"></p>
+        <div>
+            <p>Copyright 2024 HARP LAB All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+<style>
+    table {
+        border-collapse: collapse;
+    }
+
+    td {
+        padding: .125em;
+        box-sizing: border-box;
+    }
+
+    tbody>tr>td {
+        text-indent: .5em;
+    }
+</style>
+</html>
